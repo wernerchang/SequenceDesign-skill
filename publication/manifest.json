@@ -93,9 +93,9 @@
     },
     {
       "path": "logs/RUN.md",
-      "bytes": 2050,
-      "sha256": "5c284101f0e9782e4073704a2fa8fd22dbe1da24a34fda2dc43a76e6d3834006",
-      "git_blob_sha1": "4ce7f73ab7a51a34990ea7b7c43a4fb4b036c0c0"
+      "bytes": 2443,
+      "sha256": "4c7c80618a835f20f00d514b7f4c4448bf93c37f87c2a99f629d3b29d2aec586",
+      "git_blob_sha1": "961a8febb38445d78ebaf84a8af051a2ff9415f7"
     },
     {
       "path": "project.yaml",
@@ -117,9 +117,9 @@
     },
     {
       "path": "research/SOURCE_MANIFEST.json",
-      "bytes": 176558,
-      "sha256": "a6f9e6966abd429959c5f2c82d46692ed03c038db690b245642be7f0183f20c2",
-      "git_blob_sha1": "98938ed9d36c9278c45aa699745291d48103aa98"
+      "bytes": 172104,
+      "sha256": "9f5c251112143fd1e666a29d75b9f5f9024851ef6df0d3e5cb21ebe8d66e298c",
+      "git_blob_sha1": "5e9adb7e46ed53ee416ace146e9aa7059950da24"
     },
     {
       "path": "research/chapter-01.md",
@@ -147,9 +147,9 @@
     },
     {
       "path": "research/tasks.json",
-      "bytes": 27888,
-      "sha256": "f58300dc22ade755d85884c0e2daa33d188e3d8937f2371f0e09933895881a23",
-      "git_blob_sha1": "d7584b8daf1b0e67b17fcc5caf9f721152e15956"
+      "bytes": 27166,
+      "sha256": "dc90b89de9f9021ee20c22068b124cdf82d5e09cc6861f507e45bb1f1f77035e",
+      "git_blob_sha1": "f23b9525b705d2985cafe36bc468b9e7209d944b"
     },
     {
       "path": "scripts/build_research_index.py",
@@ -159,9 +159,9 @@
     },
     {
       "path": "scripts/freeze_public.py",
-      "bytes": 2707,
-      "sha256": "2ebbe8443877cf90b1caf333c0cf2472e79b5d2e44fc60aa2a0a2e777b3adf68",
-      "git_blob_sha1": "a1bba5719bf54c27fe93585e6f0878069f619a89"
+      "bytes": 2832,
+      "sha256": "612f207b6ff2eef46084d034c3d99691114f7ebcd529d342e6eb914db80eb661",
+      "git_blob_sha1": "7daa0166a6a45c0d99fc890e28000c53bc9064d7"
     },
     {
       "path": "scripts/inventory_source.py",

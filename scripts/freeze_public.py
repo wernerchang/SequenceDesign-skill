@@ -16,7 +16,9 @@ def freeze():
     selected=FILES+(['publication/RECEIPT.md'] if (ROOT/'publication/RECEIPT.md').exists() else [])
     rows=[]
     for rel in sorted(selected):
-        p=ROOT/rel; data=p.read_bytes(); s=data.decode('utf-8')
+        p=ROOT/rel; data=p.read_bytes(); s=data.decode('utf-8').replace('\r\n','\n').replace('\r','\n')
+        data=s.encode('utf-8')
+        p.write_bytes(data)
         if re.search(r'[A-Za-z]:[\\/]',s):
             raise ValueError('Absolute Windows path in '+rel)
         if p.suffix=='.json': json.loads(s)
@@ -34,8 +36,8 @@ def freeze():
                 git_object_format='sha1; compare against observed remote object ids before accepting',
                 checks=dict(utf8=True,json_parse=True,relative_links=True,no_absolute_windows_paths=True),files=rows)
     out=ROOT/'publication'; out.mkdir(exist_ok=True)
-    (out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    (ROOT/'SHA256SUMS').write_text(''.join(f"{r['sha256']}  {r['path']}\n" for r in rows),encoding='utf-8')
+    (out/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    (ROOT/'SHA256SUMS').write_text(''.join(f"{r['sha256']}  {r['path']}\n" for r in rows),encoding='utf-8',newline='\n')
     print(json.dumps(dict(files=len(rows),bytes=sum(x['bytes'] for x in rows),checks=report['checks'])))
     return selected+['publication/manifest.json','SHA256SUMS']
 if __name__=='__main__': freeze()
