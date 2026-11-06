@@ -1,0 +1,43 @@
+project:
+  id: sequence-design-xiao-1985
+  title: 伪随机序列及其应用：构造、证明与应用蒸馏
+  version: 0.1.0
+  maturity: research-trial
+  timezone: Asia/Taipei
+  workflow_version: 1.1.0
+  execution_profile: repository-publication
+  acceptance_target: uploaded-branch-and-verified
+source:
+  source_id: XIAO-LIANG-WANG-1985
+  kind: scanned-pdf
+  title: 伪随机序列及其应用
+  authors: [肖国镇, 梁传甲, 王育民]
+  publisher: 国防工业出版社
+  publication_date: 1985-03
+  revision: 第一版第一次印刷
+  public_distribution: false
+objective:
+  primary_tasks: [序列构造与分析, 证明机制理解, 相关性能评价, 工程应用建模]
+  priorities: [构造思想, 设计条件, 证明链, 反例与边界, 可执行复算]
+runtime:
+  cangjie_version: 2.5.0
+  python: 3.12.14
+  extraction: Windows.Media.Ocr zh-Hans-CN
+  max_parallel_agents: 4
+delivery:
+  output_mode: single
+  installation_scope: not-requested
+  artifacts: [chapter-study, distillation-plan, skill, examples, verification]
+github:
+  repository: wernerchang/SequenceDesign-skill
+  default_branch: main
+  branch: codex/xiao-1985-distillation
+  publication_mode: reviewed-paths
+  delete_policy: no-deletions
+authorization:
+  local_analysis: true
+  install: false
+  upload: true
+  merge: false
+  create_tag_or_release: false
+  evidence: 用户请求精读指定PDF，参考文本蒸馏1.0，给出方案进行蒸馏并上传指定仓库。
