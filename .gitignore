@@ -1,0 +1,5 @@
+private/
+public-staging/
+__pycache__/
+*.pyc
+logs/local/
