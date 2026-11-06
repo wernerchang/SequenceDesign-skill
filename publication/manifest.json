@@ -45,9 +45,9 @@
     },
     {
       "path": "PIPELINE_STATE.md",
-      "bytes": 2076,
-      "sha256": "236a76386bf41bc71f53a6f7878184f3ab1fd74ad38d81df9ab64ff474b74c7c",
-      "git_blob_sha1": "4df3664f4bb487b2f5debcdb40c390b97ba47270"
+      "bytes": 2214,
+      "sha256": "acc0697e36267c495379272e4683d40b60bb371f7b0cdf9f3db29c30fa5a4271",
+      "git_blob_sha1": "4b40232c70d4d84e4373afdb93ea8c4ba258170b"
     },
     {
       "path": "README.md",
@@ -102,6 +102,12 @@
       "bytes": 1452,
       "sha256": "9e245dd87d66839e322fef613201a5830eb4b2f7d5e6857416aa497e7ff8f8de",
       "git_blob_sha1": "09595ee994622d879b216ff475fdbb1825e28da8"
+    },
+    {
+      "path": "publication/RECEIPT.md",
+      "bytes": 1944,
+      "sha256": "0b890a76829d5bbbf0db639813df518e0f1b433276b7bd10578bc28124f820cc",
+      "git_blob_sha1": "af97dcb6547dae8aa1d333bcb8e373d9a109de28"
     },
     {
       "path": "research/BOOK_OVERVIEW.md",
@@ -159,9 +165,9 @@
     },
     {
       "path": "scripts/freeze_public.py",
-      "bytes": 2832,
-      "sha256": "612f207b6ff2eef46084d034c3d99691114f7ebcd529d342e6eb914db80eb661",
-      "git_blob_sha1": "7daa0166a6a45c0d99fc890e28000c53bc9064d7"
+      "bytes": 2848,
+      "sha256": "181a6bac0c23d7fae0352bcd272cbdcc1a3f036240767cd671fccf71d6b21f85",
+      "git_blob_sha1": "2ec9379443f9fa578ec167deab00d9e28b03bcee"
     },
     {
       "path": "scripts/inventory_source.py",

@@ -19,7 +19,7 @@ def freeze():
         p=ROOT/rel; data=p.read_bytes(); s=data.decode('utf-8').replace('\r\n','\n').replace('\r','\n')
         data=s.encode('utf-8')
         p.write_bytes(data)
-        if re.search(r'[A-Za-z]:[\\/]',s):
+        if re.search(r'(?<![A-Za-z0-9])[A-Za-z]:[\\/]',s):
             raise ValueError('Absolute Windows path in '+rel)
         if p.suffix=='.json': json.loads(s)
         if p.suffix=='.md':
